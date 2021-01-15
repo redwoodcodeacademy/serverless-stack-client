@@ -6,6 +6,7 @@ import { useAppContext } from "../libs/contextLib";
 import LoaderButton from "../components/LoaderButton";
 import { onError } from "../libs/errorLib";
 import { useFormFields } from "../libs/hooksLib";
+import { Link } from "react-router-dom";
 
 export default function Login() {
 
@@ -55,6 +56,7 @@ export default function Login() {
                         onChange={handleFieldChange}
                     />
                 </Form.Group>
+                <Link to="/login/reset">Forgot password?</Link>
                 <LoaderButton
                     block
                     size="lg"
